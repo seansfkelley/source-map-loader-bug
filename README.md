@@ -22,7 +22,7 @@ Notice that there's an alias setting for `left-pad`. The expected behavior here 
 
 Commenting out `source-map-loader` in the config and rerunning `npm start` yields only a single copy. To verify that this is indeed because of `source-map-loader`, you can also uncomment it and the `alias` config, which will cause there to be two instances again. Therefore, `source-map-loader` must be causing a duplicate instance of the dependency despite the `alias` setting.
 
-The `alias` command is respected insofar as the particular _instance_ that ends up multiply-included is the one specified by `alias`. You can verify this by mangling `parent`'s instance of `left-pad`, then seeing that you get two identical manglings in the output bundle.
+The `alias` command is respected insofar as the particular _version_ that ends up multiply-included is the one specified by `alias`. You can verify this by mangling `parent`'s instance of `left-pad`, then seeing that you get two identical manglings in the output bundle.
 
 ## bonus bug
 
