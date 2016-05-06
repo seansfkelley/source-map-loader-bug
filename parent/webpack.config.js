@@ -12,7 +12,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /node_modules.*\.js$/, loader: 'source-map-loader' }
+      { test: /node_modules.*\.js$/, loader: 'noop-loader' },
+      // { test: /node_modules.*\.js$/, loader: 'source-map-loader' },
     ]
   }
 };

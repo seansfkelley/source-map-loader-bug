@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "left-pad": "^1.1.0",
+    "noop-loader": "^1.0.0",
     "source-map-loader": "^0.1.5"
   }
 }
